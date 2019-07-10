@@ -1,19 +1,22 @@
-# snapshotalyzer-30000
-Demo Project to manage AWS EC2 instance snapshots
+# aws-instance-cli
+Demo Project to manage AWS EC2 instances
 
 ## About
 
-This project is a demo and uses boto3 to manage AWS EC2 instance snapshots.
+This project is a demo and uses boto3 to manage AWS EC2 instances
 
 ## Configuring
 
-shotty uses the configuration file created by the AWS cli. e.g.
+aws-instance-cli uses the configuration file created by the AWS cli. e.g.
 
-`aws configure --profile shotty`
+`aws configure --profile instancecli`
 
 ## Running
 
-`pipenv run python shotty/shotty.py <command> <--project=PROJECT>`
+`pipenv run python instance/instancecli.py <command> <subcommand> <--project=PROJECT>`
 
-*command* is list, start or stop
+*command* is instances or volumes
+
+*subcommand* depends on command
+
 *project* is optional
