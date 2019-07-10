@@ -17,7 +17,7 @@ def filter_instances(project):
 
 @click.group()  # The @ is the decorator. It wraps functions.
 def cli():
-    """Shotty manages snapshots"""
+    """Instancecli manages AWS instances"""
 
 @cli.group('volumes')
 def volumes():
